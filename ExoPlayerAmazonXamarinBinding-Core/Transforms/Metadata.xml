@@ -1,37 +1,30 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.drm']/class[@name='DrmInitData']/method[@name='compare']/parameter[@name='first']" name="type">java.lang.Object</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.drm']/class[@name='DrmInitData']/method[@name='compare']/parameter[@name='second']" name="type">java.lang.Object</attr>
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.offline']/class[@name='StreamKey']/method[@name='compareTo']/parameter[@name='o']" name="type">java.lang.Object</attr>
 
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdsMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='mediaPeriodId']" name="type">java.lang.Object</attr>
-
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/class[@name='ChunkExtractorWrapper']/method[@name='seekMap']/parameter[@name='seekMap']" name="type">Com.Google.Android.Exoplayer2.Extractor.ISeekMap</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaPeriod']/method[@name='onContinueLoadingRequested']/parameter[@name='source']" name="type">java.lang.Object</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='DeferredMediaPeriod']/method[@name='onContinueLoadingRequested']/parameter[@name='source']" name="type">java.lang.Object</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='LoopingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MergingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
+  
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdsMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='mediaPeriodId']" name="type">java.lang.Object</attr>
+  
+  <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/interface[@name='ExtractorOutput']/method[@name='seekMap' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.extractor.SeekMap']]" name="name">SeekMapA</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/class[@name='ChunkExtractorWrapper']/method[@name='seekMap']" name="name">SeekMapA</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/class[@name='DummyExtractorOutput']/method[@name='seekMap']" name="name">SeekMapA</attr>
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
-
+  
   <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/interface[@name='BinarySearchSeeker.SeekTimestampConverter']" name="visibility">public</attr>
   
   
-  <!-- ...cannot change access modifiers when overriding 'protected' inherited member... -->
+  <!-- Solution for: ...cannot change access modifiers when overriding 'protected' inherited member... START -->
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='CompositeMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">protected</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">protected</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">protected</attr>
@@ -42,13 +35,7 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='SingleSampleMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">protected</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='CompositeMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">protected</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">protected</attr>
-
-  
-  
-
-  
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
+  <!-- Solution for: ...cannot change access modifiers when overriding 'protected' inherited member... END -->
   
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='DataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
@@ -56,21 +43,31 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-
-
-
-
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='HttpDataSourceFactory']/method[@name='createDataSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
   
-
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/interface[@name='Subtitle']" />
+  <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/interface[@name='SubtitleDecoder']" />
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.decoder']/interface[@name='Decoder']" />
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']" />
 
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheSpan']/method[@name='compareTo']/parameter[@name='another']" name="type">java.lang.Object</attr>
 
 
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSourceFactory']/method[@name='createDataSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.HttpDataSource.RequestProperties']]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IHttpDataSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdPlaybackState.AdGroup']/field[@name='uris']" name="type">global::Android.Net.Uri</attr>
+
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='LeastRecentlyUsedCacheEvictor']/method[@name='compare']/parameter[@name='lhs']" name="type">java.lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='LeastRecentlyUsedCacheEvictor']/method[@name='compare']/parameter[@name='rhs']" name="type">java.lang.Object</attr>
+
+
+  <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SubtitleOutputBuffer']/method[@name='release' and count(parameter)=0]" />
+  
+  
 </metadata>
