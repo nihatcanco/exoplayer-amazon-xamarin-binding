@@ -20,19 +20,11 @@
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
 
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='mediaSourceHolder']" name="type">java.lang.Object</attr>-->
-
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource.MediaSourceHolder']/method[@name='compareTo']/parameter[@name='other']" name="type">java.lang.Object</attr>-->
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='DeferredMediaPeriod']/method[@name='onContinueLoadingRequested']/parameter[@name='source']" name="type">java.lang.Object</attr>
-
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">com.google.android.exoplayer2.source.MediaSource</attr>-->
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='LoopingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MergingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
-
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">com.google.android.exoplayer2.source.MediaSource</attr>-->
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
 
@@ -54,8 +46,6 @@
   
   
 
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource.MediaSourceHolder']/method[@name='compareTo']/parameter[@name='other']" name="type">java.lang.Object</attr>-->
-  
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']/method[@name='createMediaSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
@@ -76,16 +66,9 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
   
-  
-  
-  <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decode' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='boolean']]" name="visibility">public</attr>
-  
-  
-  <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbSubtitle']" name="visibility">public</attr>
 
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/interface[@name='Subtitle']" />
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.decoder']/interface[@name='Decoder']" />
-  
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']" />
 
 

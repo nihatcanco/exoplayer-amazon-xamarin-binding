@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.Amazon.ExoPlayer.Core</id>
+    <version>2.10.1</version>
+    <authors>Nihatcan Colpan, Onur Hazar</authors>
+    <owners>Nihatcan Colpan, Onur Hazar</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ExoPlayer Core Xamarin binding for Amazon devices.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>xamarin, exoplayer, core, amazon, xamarin.android, android, exo, player, media, streaming</tags>
+  </metadata>
+</package>
