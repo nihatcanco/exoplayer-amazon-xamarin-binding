@@ -46,7 +46,8 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\exoplayer-dash-2.10.1.aar" />
+    <None Include="Jars\exoplayer-dash-2.10.1.aar" />
+    <LibraryProjectZip Include="Jars\library-dash-release.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

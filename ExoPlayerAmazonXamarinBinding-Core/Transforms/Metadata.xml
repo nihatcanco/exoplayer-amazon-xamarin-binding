@@ -6,7 +6,6 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.offline']/class[@name='StreamKey']/method[@name='compareTo']/parameter[@name='o']" name="type">java.lang.Object</attr>
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='CompositeMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='mediaSourceHolder']" name="type">java.lang.Object</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaPeriod']/method[@name='onContinueLoadingRequested']/parameter[@name='source']" name="type">java.lang.Object</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='id']" name="type">java.lang.Object</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='DeferredMediaPeriod']/method[@name='onContinueLoadingRequested']/parameter[@name='source']" name="type">java.lang.Object</attr>
@@ -45,24 +44,12 @@
   <!-- Solution for: ...cannot change access modifiers when overriding 'protected' inherited member... END -->
   
   
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='DataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="name">CreateDataSourceA</attr>
-
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='HttpDataSourceFactory']/method[@name='createDataSource']" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSourceFactory']/method[@name='CreateDataSourceA' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
-  
-  <!--<remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/interface[@name='Subtitle']" />
-  <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/interface[@name='SubtitleDecoder']" />
-  <remove-node path="/api/package[@name='com.google.android.exoplayer2.decoder']/interface[@name='Decoder']" />
-  <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']" />-->
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='PriorityDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]" name="managedReturn">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
 
+  
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream.cache']/class[@name='CacheSpan']/method[@name='compareTo']/parameter[@name='another']" name="type">java.lang.Object</attr>
 
 
@@ -97,6 +84,10 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='createInputBuffer']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='createOutputBuffer']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='createUnexpectedDecodeException']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='decode']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='decode']/parameter[1]" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='decode']/parameter[2]" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='decode']" name="managedReturn">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='decodeC']" name="visibility">public</attr>
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SimpleSubtitleDecoder']/method[@name='createInputBuffer' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
@@ -109,15 +100,11 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='createOutputBuffer']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='createUnexpectedDecodeException']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decodeC']" name="visibility">public</attr>
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decode']" name="visibility">public</attr>-->
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decode']/parameter[1]" name="type">java.lang.Object</attr>-->
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decode']/parameter[2]" name="type">java.lang.Object</attr>-->
 
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='createInputBuffer']" name="managedReturn">Com.Google.Android.Exoplayer2.Text.ISubtitle</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='createOutputBuffer']" name="managedReturn">Com.Google.Android.Exoplayer2.Text.ISubtitle</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='createUnexpectedDecodeException']" name="managedReturn">Com.Google.Android.Exoplayer2.Text.ISubtitle</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decodeC']" name="managedReturn">Com.Google.Android.Exoplayer2.Text.ISubtitle</attr>
-  <!--<attr path="/api/package[@name='com.google.android.exoplayer2.text.dvb']/class[@name='DvbDecoder']/method[@name='decode']" name="managedReturn">java.lang.Object</attr>-->
   
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.webvtt']/class[@name='Mp4WebvttDecoder']/method[@name='createInputBuffer']" name="visibility">public</attr>
@@ -206,14 +193,11 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.ttml']/class[@name='TtmlSubtitle']/parameter[@name='globalStyles']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.ttml']/class[@name='TtmlSubtitle']/parameter[@name='regionMap']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.text.ttml']/class[@name='TtmlSubtitle']/parameter[@name='imageMap']" name="visibility">public</attr>
-  
-  
-  
-  
-  
-  
 
-  <!--<remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/class[@name='SubtitleOutputBuffer']/method[@name='release' and count(parameter)=0]" />-->
-  
+
+
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[1]" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource.MediaSourceHolder']/method[@name='compareTo']/parameter[1]" name="type">Java.Lang.Object</attr>
   
 </metadata>
