@@ -1,9 +1,18 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/class[@name='DashMediaSource.Factory']/method[@name='createMediaSource' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/class[@name='DashMediaSource.Iso8601Parser']/method[@name='parse' and count(parameter)=2 and parameter[1][@type='android.net.Uri'] and parameter[2][@type='java.io.InputStream']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash.manifest']/class[@name='DashManifest']/method[@name='copy' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.google.android.exoplayer2.offline.StreamKey&gt;']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash.manifest']/class[@name='DashManifestParser']/method[@name='parse' and count(parameter)=2 and parameter[1][@type='android.net.Uri'] and parameter[2][@type='java.io.InputStream']]" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/class[@name='DefaultDashChunkSource']/method[@name='getNextChunk' and count(parameter)=4 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='java.util.List&lt;com.google.android.exoplayer2.source.chunk.BaseMediaChunk&gt;'] and parameter[4][@type='com.google.android.exoplayer2.source.chunk.ChunkHolder']]/parameter[3]" name="type">Android.Runtime.JavaList</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/class[@name='DefaultDashChunkSource']/method[@name='getPreferredQueueSize' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='java.util.List&lt;com.google.android.exoplayer2.source.chunk.BaseMediaChunk&gt;']]/parameter[2]" name="type">Android.Runtime.JavaList</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/interface[@name='DashChunkSource']/method[@name='getNextChunk' and count(parameter)=4 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='java.util.List&lt;com.google.android.exoplayer2.source.chunk.BaseMediaChunk&gt;'] and parameter[4][@type='com.google.android.exoplayer2.source.chunk.ChunkHolder']]/parameter[3]" name="type">Android.Runtime.JavaList</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash']/interface[@name='DashChunkSource']/method[@name='getPreferredQueueSize' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='java.util.List&lt;com.google.android.exoplayer2.source.chunk.BaseMediaChunk&gt;']]/parameter[2]" name="type">Android.Runtime.JavaList</attr>
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash.offline']/class[@name='DashDownloader']/method[@name='getSegments' and count(parameter)=3 and parameter[1][@type='com.google.android.exoplayer2.upstream.DataSource'] and parameter[2][@type='com.google.android.exoplayer2.source.dash.manifest.DashManifest'] and parameter[3][@type='boolean']]/parameter[2]" name="type">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.dash.offline']/class[@name='DashDownloader']/method[@name='getManifest' and count(parameter)=2 and parameter[1][@type='com.google.android.exoplayer2.upstream.DataSource'] and parameter[2][@type='com.google.android.exoplayer2.upstream.DataSpec']]" name="managedReturn">Java.Lang.Object</attr>
   
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+  
 </metadata>
