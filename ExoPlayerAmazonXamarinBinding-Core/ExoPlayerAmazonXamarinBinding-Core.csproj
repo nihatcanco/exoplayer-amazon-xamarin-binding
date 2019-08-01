@@ -6,6 +6,8 @@
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <RootNamespace>ExoPlayerAmazonXamarinBinding_Core</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
