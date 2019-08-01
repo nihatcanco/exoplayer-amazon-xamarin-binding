@@ -1,7 +1,7 @@
 ﻿<metadata>
 
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/class[@name='HlsMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">protected</attr>
-  <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/class[@name='HlsMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/class[@name='HlsMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/class[@name='HlsMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/class[@name='HlsMediaSource.Factory']/method[@name='createMediaSource' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]" name="managedReturn">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
   
   <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls.offline']/class[@name='HlsDownloader']/method[@name='getManifest' and count(parameter)=2 and parameter[1][@type='com.google.android.exoplayer2.upstream.DataSource'] and parameter[2][@type='com.google.android.exoplayer2.upstream.DataSpec']]" name="managedReturn">Java.Lang.Object</attr>
