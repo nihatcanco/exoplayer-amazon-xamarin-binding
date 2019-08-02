@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+
   <metadata>
     <id>Xamarin.Amazon.ExoPlayer</id>
-    <version>2.10.1</version>
+    <version>2.10.1.0</version>
     <authors>Nihatcan Colpan, Onur Hazar</authors>
     <owners>Nihatcan Colpan, Onur Hazar</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,11 +12,16 @@
     <copyright>Copyright 2019</copyright>
     <tags>xamarin, exoplayer, core, amazon, xamarin.android, android, exo, player, media, streaming</tags>
     <dependencies>
-      <dependency id="Xamarin.Amazon.ExoPlayer.Core" version="2.10.1" />
-      <dependency id="Xamarin.Amazon.ExoPlayer.Dash" version="2.10.1" />
-      <dependency id="Xamarin.Amazon.ExoPlayer.Hls" version="2.10.1" />
-      <dependency id="Xamarin.Amazon.ExoPlayer.SmoothStreaming" version="2.10.1" />
-      <dependency id="Xamarin.Amazon.ExoPlayer.UI" version="2.10.1" />
+      <dependency id="Xamarin.Amazon.ExoPlayer.Core" version="2.10.1.0" />
+      <dependency id="Xamarin.Amazon.ExoPlayer.Dash" version="2.10.1.0" />
+      <dependency id="Xamarin.Amazon.ExoPlayer.HLS" version="2.10.1.0" />
+      <dependency id="Xamarin.Amazon.ExoPlayer.SmoothStreaming" version="2.10.1.0" />
+      <dependency id="Xamarin.Amazon.ExoPlayer.UI" version="2.10.1.0" />
     </dependencies>
   </metadata>
+
+  <files>
+    <file src="bin\Release\ExoPlayerAmazonXamarinBinding.dll" target="lib\ExoPlayerAmazonXamarinBinding.dll" />
+  </files>
+
 </package>
