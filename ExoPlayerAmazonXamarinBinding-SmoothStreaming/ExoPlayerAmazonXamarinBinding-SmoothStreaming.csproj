@@ -46,7 +46,6 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <None Include="Jars\exoplayer-smoothstreaming-2.10.1.aar" />
     <LibraryProjectZip Include="Jars\library-smoothstreaming-release.aar" />
   </ItemGroup>
   <ItemGroup>
