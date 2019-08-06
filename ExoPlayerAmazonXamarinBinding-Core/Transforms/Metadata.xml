@@ -202,7 +202,7 @@
 
 
 
-   <!-- for SmoothStreaming library START -->
+  <!-- for SmoothStreaming library START -->
   <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/interface[@name='ChunkSource']/method[@name='getNextChunk' and count(parameter)=4 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='java.util.List&lt;? extends com.google.android.exoplayer2.source.chunk.MediaChunk&gt;'] and parameter[4][@type='com.google.android.exoplayer2.source.chunk.ChunkHolder']]/parameter[3]" name="type">Android.Runtime.JavaList</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/interface[@name='ChunkSource']/method[@name='getPreferredQueueSize' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='java.util.List&lt;? extends com.google.android.exoplayer2.source.chunk.MediaChunk&gt;']]/parameter[2]" name="type">Android.Runtime.JavaList</attr>
   <!-- for SmoothStreaming library END -->
@@ -222,7 +222,5 @@
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='SingleSampleMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]" name="visibility">public</attr>
   <attr path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='SingleSampleMediaSource']/method[@name='releaseSourceInternal' and count(parameter)=0]" name="visibility">public</attr>
   <!-- for Dash library END -->
-    
-
 
 </metadata>
